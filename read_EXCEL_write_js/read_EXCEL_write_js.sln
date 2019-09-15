@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29215.179
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "read_EXCEL_write_js", "read_EXCEL_write_js\read_EXCEL_write_js.csproj", "{11459AB3-6932-4911-9612-78318C6B2DF0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{11459AB3-6932-4911-9612-78318C6B2DF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11459AB3-6932-4911-9612-78318C6B2DF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11459AB3-6932-4911-9612-78318C6B2DF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11459AB3-6932-4911-9612-78318C6B2DF0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {152F0343-09BD-45CF-94BC-E8DF804FCDD0}
+	EndGlobalSection
+EndGlobal
