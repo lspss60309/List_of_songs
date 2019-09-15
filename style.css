@@ -19,8 +19,32 @@ input[type=text]{
     width: 80%;
 }
 
-#special_td {
+#hidden_right {
 	border-top: hidden;
 	border-right: hidden;
 	border-bottom: hidden;
+}
+
+#hidden_left {
+	border-top: hidden;
+	border-left: hidden;
+	border-bottom: hidden;
+}
+
+#green {
+	background-color: #4CAF50; /* Green */
+	color: White;
+	padding: 10px 10px;
+	border-radius: 50%;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#red {
+	background-color: #961414;
+	color: #04D2EF;
+	padding: 10px 10px;
+	border-radius: 50%;
+	font-size: 18px;
+	font-weight: bold;
 }
