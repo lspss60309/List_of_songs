@@ -52,15 +52,14 @@ input[type=text]{
 #GoTop {
 	background-color: transparent;
 	color: #04D2EF;
-	padding: 10px 10px;
+	padding: 25px 25px;
 	border-radius: 50%;
-	font-size: 18px;
+	font-size: 22px;
 	font-weight: bold;
 }
 .fixed {
   position: fixed;
-  bottom: 0;
-  right: 0;
-  width: 200px;
+  bottom: 50px;
+  right: 70px;  
   background-color: transparent;
 }
