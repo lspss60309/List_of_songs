@@ -23,6 +23,10 @@ button {
     touch-action: manipulation;
 }
 
+input {
+    touch-action: manipulation;
+}
+
 #green {
 	background-color: #4CAF50; /* Green */
 	color: White;
