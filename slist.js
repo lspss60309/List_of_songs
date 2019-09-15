@@ -32,3 +32,18 @@ function print(){
 function home(){
 	window.location.replace('index.html');
 }
+
+$(document).ready(function(){
+	$("#GoTop").click(function(){
+		jQuery("html,body").animate({
+			scrollTop:0
+		},300);
+	});
+	$(window).scroll(function() {
+		if ( $(this).scrollTop() > 100){
+			$('#GoTop').fadeIn("fast");
+		} else {
+			$('#GoTop').stop().fadeOut("fast");
+		}
+	});
+});

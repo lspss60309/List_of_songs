@@ -48,3 +48,19 @@ input[type=text]{
 	font-size: 18px;
 	font-weight: bold;
 }
+
+#GoTop {
+	background-color: transparent;
+	color: #04D2EF;
+	padding: 10px 10px;
+	border-radius: 50%;
+	font-size: 18px;
+	font-weight: bold;
+}
+.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  background-color: transparent;
+}
