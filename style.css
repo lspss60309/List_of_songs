@@ -22,25 +22,25 @@ input[type=text]{
 #green {
 	background-color: #4CAF50; /* Green */
 	color: White;
-	padding: 20% 20%;
+	padding: 35% 35%;
 	border-radius: 50%;
-	font-size: 18px;
+	font-size: 48px;
 	font-weight: bold;
 }
 
 #red {
 	background-color: #961414;
 	color: #04D2EF;
-	padding: 20% 20%;
+	padding: 30% 30%;
 	border-radius: 50%;
-	font-size: 18px;
+	font-size: 28px;
 	font-weight: bold;
 }
 
 #GoTop {
 	background-color: transparent;
 	color: #04D2EF;
-	padding: 25px 25px;
+	padding: 50px 50px;
 	border-radius: 50%;
 	font-size: 22px;
 	font-weight: bold;
