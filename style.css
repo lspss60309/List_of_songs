@@ -22,7 +22,7 @@ input[type=text]{
 #green {
 	background-color: #4CAF50; /* Green */
 	color: White;
-	padding: 20px 20px;
+	padding: 20% 20%;
 	border-radius: 50%;
 	font-size: 18px;
 	font-weight: bold;
@@ -31,7 +31,7 @@ input[type=text]{
 #red {
 	background-color: #961414;
 	color: #04D2EF;
-	padding: 20px 20px;
+	padding: 20% 20%;
 	border-radius: 50%;
 	font-size: 18px;
 	font-weight: bold;
