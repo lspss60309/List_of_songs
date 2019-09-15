@@ -19,6 +19,10 @@ input[type=text]{
     width: 80%;
 }
 
+button {
+    touch-action: manipulation;
+}
+
 #green {
 	background-color: #4CAF50; /* Green */
 	color: White;
