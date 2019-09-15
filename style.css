@@ -19,6 +19,13 @@ input[type=text]{
     width: 80%;
 }
 
+input[type=number],
+input[type=text],
+select:focus,
+input {
+  font-size: 38px;
+}
+
 button {
     touch-action: manipulation;
 }
