@@ -18,7 +18,7 @@ function print(){
 	
 	var color_counter = 0;
 	list.forEach(function(i){
-		if(word_counter == i.words_count || word_counter == 0){
+		if((word_counter == i.words_count || word_counter == 0 )&& (i.author.indexOf(author_keyword) != -1)&& (i.name.indexOf(song_keyword) != -1)){
 			var row = table.insertRow(-1);
 			var cell1 = row.insertCell(0);
 			var cell2 = row.insertCell(1);
