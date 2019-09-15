@@ -48,6 +48,16 @@ input[type=text]{
 .fixed {
   position: fixed;
   bottom: 50px;
-  right: 70px;  
+  left: 70px;  
   background-color: transparent;
+}
+
+.bg_first {
+	background-color: blue;
+	color:white;
+}
+
+.bg_second {
+	background-color: yellow;
+	color:white;
 }

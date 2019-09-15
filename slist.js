@@ -16,15 +16,22 @@ function print(){
 	var author_keyword = document.getElementById("author_keyword").value;	//欄位中給的作者關鍵字
 	var word_counter = document.getElementById("word_counter").value;		//欄位中給的歌名字數
 	
+	var color_counter = 0;
 	list.forEach(function(i){
 		if(word_counter == i.words_count || word_counter == 0){
 			var row = table.insertRow(-1);
 			var cell1 = row.insertCell(0);
 			var cell2 = row.insertCell(1);
 			var cell3 = row.insertCell(2);
-			cell1.innerHTML=i.id;
-			cell2.innerHTML=i.name;        
-			cell3.innerHTML=i.author;
+			if(color_counter%2 == 0){
+				cell1.innerHTML="<div class=\"bg_first\">"+i.id+"</div>";
+				cell2.innerHTML=i.name;        
+				cell3.innerHTML=i.author;
+			}else{
+				cell1.innerHTML="<div class=\"bg_second\">"+i.id+"</div>";
+				cell2.innerHTML=i.name;        
+				cell3.innerHTML=i.author;
+			}color_counter++;
 		}
 	});	
 }
