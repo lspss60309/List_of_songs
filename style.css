@@ -1,0 +1,26 @@
+table {
+	border-collapse: collapse;
+}
+
+table, th, td {
+	border: 1px solid black;
+}
+
+th {
+	text-align: center; 
+    vertical-align: middle;
+}
+
+input[type=number]{
+    width: 80%;
+}
+
+input[type=text]{
+    width: 80%;
+}
+
+#special_td {
+	border-top: hidden;
+	border-right: hidden;
+	border-bottom: hidden;
+}

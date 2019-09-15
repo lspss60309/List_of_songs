@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="slist.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<table width=100%>
+	<tr>
+	<form name="order">
+        
+        <td width=25%><input id="song_keyword" name="song_keyword" placeholder="歌名關鍵字" type="text" style="font-size:24px" /></td>
+        
+        <td width=25%><input id="author_keyword" name="author_keyword" placeholder="歌手關鍵字" type="text" style="font-size:24px" /></td>
+       
+        <td width=15%><input id="word_counter" name="word_counter" placeholder="歌名字數" type="number" style="font-size:24px" /></td>
+        
+        <th width=10%><button type="button" onClick="print();"  style="width:75%;height:75%;"/>確定</button></td>
+		<th width=10%><button type="home" onClick="home();"  style="width:75%;height:75%;"/>重設</button></td>
+		<td id="special_td" width=15% ></td>
+    </form>
+	</tr>
+	</table>
+	<table id="results" width=100% style="font-size:26px;">
+		<tr>
+			<th>編號</th>
+			<th>歌名</th>
+			<th>歌手</th>
+		</tr>		
+	</table>
+	
+
+</body>
+</html>
