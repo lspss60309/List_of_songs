@@ -2437,6 +2437,7 @@ function print(){
 	var word_counter = document.getElementById("word_counter").value;		//欄位中給的歌名字數
 	
 	var color_counter = 0;
+	var exist_counter = 0;
 	list.forEach(function(i){
 		if((word_counter == i.words_count || word_counter == 0 )&& (i.author.indexOf(author_keyword) != -1)&& (i.name.indexOf(song_keyword) != -1)){
 			var row = table.insertRow(-1);
@@ -2452,8 +2453,12 @@ function print(){
 				cell2.innerHTML=i.name;        
 				cell3.innerHTML=i.author;
 			}color_counter++;
+			exist_counter++;
 		}
-	});	
+	});
+	if(exist_counter == 0){
+		alert("您所搜尋的關鍵字組合" + "\n歌名: " +song_keyword + "\n歌手: " + author_keyword + "\n字部: " + word_counter + "\n找不到結果!");
+	}
 }
 
 function home(){
