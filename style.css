@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'W5W';
+  src: 	url('fonts\\W5.woff') format('woff'),
+		url('fonts\\W5.ttf') format('truetype');
+}
+
+body {
+  font-family: 'W5W';
+}
+
 table {
 	border-collapse: collapse;
 }
