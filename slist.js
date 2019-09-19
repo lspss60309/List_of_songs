@@ -2444,14 +2444,18 @@ function print(){
 			var cell1 = row.insertCell(0);
 			var cell2 = row.insertCell(1);
 			var cell3 = row.insertCell(2);
+			
+			var bg1 = "<div class=\"bg_first\">";
+			var bg2 = "<div class=\"bg_second\">";
+			var search_lyrics = "<a href=\"https://mojim.com/" + i.name + ".html?t3\" target=\"_blank\"><img src=\"img\\book.png\" width = 26px height = 26px /></a>";
 			if(color_counter%2 == 0){
-				cell1.innerHTML="<div class=\"bg_first\">"+i.id+"</div>";
-				cell2.innerHTML=i.name;        
-				cell3.innerHTML=i.author;
+				cell1.innerHTML = bg1 + i.id + "</div>";
+				cell2.innerHTML = bg1 + i.name + "<span class=\"rightfloat\">" + search_lyrics + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>" + "</div>";        
+				cell3.innerHTML = bg1 + i.author + "</div>";
 			}else{
-				cell1.innerHTML="<div class=\"bg_second\">"+i.id+"</div>";
-				cell2.innerHTML=i.name;        
-				cell3.innerHTML=i.author;
+				cell1.innerHTML = bg2 + i.id + "</div>";
+				cell2.innerHTML = bg2 + i.name + "<span class=\"rightfloat\">" + search_lyrics + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>" + "</div>";        
+				cell3.innerHTML = bg2 + i.author + "</div>";
 			}color_counter++;
 			exist_counter++;
 		}

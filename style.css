@@ -2,13 +2,8 @@ table {
 	border-collapse: collapse;
 }
 
-table, th, td {
-	border: 1px solid black;
-}
-
-th {
-	text-align: center; 
-    vertical-align: middle;
+td {
+	padding:0;
 }
 
 input[type=number]{
@@ -62,11 +57,19 @@ button {
 }
 
 .bg_first {
-	background-color: blue;
-	color:white;
+	background-color: #d8f2da;
+	color: #281125;
+	height:40px;
+	line-height:40px;
 }
 
 .bg_second {
-	background-color: yellow;
+	background-color: #D22828;
 	color:white;
+	height:40px;
+	line-height:40px;
+}
+
+.rightfloat {
+	float:right;
 }
