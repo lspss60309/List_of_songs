@@ -2461,7 +2461,7 @@ function print(){
 		}
 	});
 	if(exist_counter == 0){
-		alert("您所搜尋的關鍵字組合" + "\n歌名: " +song_keyword + "\n歌手: " + author_keyword + "\n字部: " + word_counter + "\n找不到結果!");
+		alert("您所搜尋的關鍵字組合" + "\n歌名: " +song_keyword + "\n歌手: " + author_keyword + "\n字部: " + word_counter + "\n找不到結果!\n請翻本子找找看~");
 	}
 }
 
