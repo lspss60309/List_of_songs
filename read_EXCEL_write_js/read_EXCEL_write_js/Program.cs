@@ -21,7 +21,7 @@ namespace read_EXCEL_write_js
         public static string getExcel ()
         {/*https://coderwall.com/p/app3ya/read-excel-file-in-c */
             Excel.Application xlApp = new Excel.Application();
-            Excel.Workbook xlWorkbook = xlApp.Workbooks.Open(@"D:\GitSpace\Songs_List\excel\w_1.xlsx");
+            Excel.Workbook xlWorkbook = xlApp.Workbooks.Open(@"D:\GitSpace\Songs_List\excel\song_list.xlsx");
             Excel._Worksheet xlWorksheet = xlWorkbook.Sheets[1];
             Excel.Range xlRange = xlWorksheet.UsedRange;
 
