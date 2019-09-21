@@ -2436,25 +2436,35 @@ function print(){
 	var author_keyword = document.getElementById("author_keyword").value;	//欄位中給的作者關鍵字
 	var word_counter = document.getElementById("word_counter").value;		//欄位中給的歌名字數
 	
-	var color_counter = 0;
+	var color_counter = 0;//顏色計數
 	var exist_counter = 0;
+	
+	var bg1 = "<div class=\"bg_first\">";
+	var bg2 = "<div class=\"bg_second\">";
+	var l_space = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+	var s_space = "&nbsp;&nbsp;&nbsp;&nbsp;";
 	list.forEach(function(i){
 		if((word_counter == i.words_count || word_counter == 0 )&& (i.author.indexOf(author_keyword) != -1)&& (i.name.indexOf(song_keyword) != -1)){
 			var row = table.insertRow(-1);
 			var cell1 = row.insertCell(0);
 			var cell2 = row.insertCell(1);
-			var cell3 = row.insertCell(2);
+			var cell3 = row.insertCell(2);			
 			
-			var bg1 = "<div class=\"bg_first\">";
-			var bg2 = "<div class=\"bg_second\">";
 			var search_lyrics = "<a href=\"https://mojim.com/" + i.name + ".html?t3\" target=\"_blank\"><img src=\"img\\book.png\" width = 26px height = 26px /></a>";
+			var search_youtube = "";			
+			if(i.author == "N"){
+				search_youtube = "<a href=\"https://www.youtube.com/results?search_query=" + i.name + "\" target=\"_blank\"><img src=\"img\\youtube.png\" width = 26px height = 26px /></a>";
+			}else{
+				search_youtube = "<a href=\"https://www.youtube.com/results?search_query=" + i.name + "+" + i.author + "\" target=\"_blank\"><img src=\"img\\youtube.png\" width = 26px height = 26px /></a>";
+			}//歌手為N時搜尋歌名就好,其餘搜尋歌名+歌手
+			
 			if(color_counter%2 == 0){
 				cell1.innerHTML = bg1 + i.id + "</div>";
-				cell2.innerHTML = bg1 + i.name + "<span class=\"rightfloat\">" + search_lyrics + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>" + "</div>";        
+				cell2.innerHTML = bg1 + i.name + "<span class=\"rightfloat\">" + search_youtube + s_space + search_lyrics + l_space + "</span></div>";
 				cell3.innerHTML = bg1 + i.author + "</div>";
 			}else{
 				cell1.innerHTML = bg2 + i.id + "</div>";
-				cell2.innerHTML = bg2 + i.name + "<span class=\"rightfloat\">" + search_lyrics + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>" + "</div>";        
+				cell2.innerHTML = bg2 + i.name + "<span class=\"rightfloat\">" + search_youtube + s_space + search_lyrics + l_space + "</span></div>";        
 				cell3.innerHTML = bg2 + i.author + "</div>";
 			}color_counter++;
 			exist_counter++;
