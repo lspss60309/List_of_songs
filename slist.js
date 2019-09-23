@@ -24707,7 +24707,13 @@ function print(){
 			}else{
 				search_youtube = "<a href=\"https://www.youtube.com/results?search_query=" + i.name + "+" + i.author + "\" target=\"_blank\"><img src=\"img\\youtube.png\" width = 26px height = 26px /></a>";
 			}//歌手為N時搜尋歌名就好,其餘搜尋歌名+歌手
-			
+			if(i.name.length > 14){
+				l_space = "";
+				s_space = "&nbsp;&nbsp;";
+			}else{
+				l_space = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+				s_space = "&nbsp;&nbsp;&nbsp;&nbsp;";
+			}
 			if(color_counter%2 == 0){
 				cell1.innerHTML = bg1 + i.id + "</div>";
 				cell2.innerHTML = bg1 + i.name + "<span class=\"rightfloat\">" + search_youtube + s_space + search_lyrics + l_space + "</span></div>";
