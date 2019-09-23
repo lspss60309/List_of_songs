@@ -7256,7 +7256,7 @@
 },{
 	'id': 13541,
 	'name': "笨小孩",
-	'author': "吳宗憲,劉德華,柯受?",
+	'author': "吳宗憲,劉德華,柯受良",
 	'words_count': 3
 },{
 	'id': 31427,
@@ -24670,7 +24670,7 @@
 	'words_count': 10
 },{
 	'id': 11443,
-	'name': "是不是這樣的夜晚你才會這樣的想",
+	'name': "是不是這樣的夜晚你才會這樣的想起我",
 	'author': "吳宗憲",
 	'words_count': 10
 },{
@@ -24681,7 +24681,7 @@
 }];
 
 function print(){
-	var table=document.getElementById("results");	
+	var table = document.getElementById("results");
 	var song_keyword = document.getElementById("song_keyword").value;		//欄位中給的歌名關鍵字
 	var author_keyword = document.getElementById("author_keyword").value;	//欄位中給的作者關鍵字
 	var word_counter = document.getElementById("word_counter").value;		//欄位中給的歌名字數
