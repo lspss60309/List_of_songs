@@ -751,7 +751,7 @@
 },{
 	'id': 56585,
 	'name': "四季",
-	'author': "ALIN",
+	'author': "A-Lin",
 	'words_count': 2
 },{
 	'id': 11668,
@@ -24695,7 +24695,7 @@ function print(){
 	var l_space = "";
 	var s_space = "";
 	list.forEach(function(i){
-		if((word_counter == i.words_count || word_counter == 0 )&& (i.author.indexOf(author_keyword) != -1)&& (i.name.indexOf(song_keyword) != -1)){
+		if((word_counter == i.words_count || word_counter == 0 )&& (i.author.toLowerCase().indexOf(author_keyword.toLowerCase()) != -1)&& (i.name.toLowerCase().indexOf(song_keyword.toLowerCase()) != -1)){
 			var row = table.insertRow(-1);
 			var cell1 = row.insertCell(0);
 			var cell2 = row.insertCell(1);
