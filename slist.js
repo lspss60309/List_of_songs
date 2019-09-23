@@ -24691,8 +24691,9 @@ function print(){
 	
 	var bg1 = "<div class=\"bg_first\">";
 	var bg2 = "<div class=\"bg_second\">";
-	var l_space = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-	var s_space = "&nbsp;&nbsp;&nbsp;&nbsp;";
+	var search_youtube = "";
+	var l_space = "";
+	var s_space = "";
 	list.forEach(function(i){
 		if((word_counter == i.words_count || word_counter == 0 )&& (i.author.indexOf(author_keyword) != -1)&& (i.name.indexOf(song_keyword) != -1)){
 			var row = table.insertRow(-1);
@@ -24701,7 +24702,7 @@ function print(){
 			var cell3 = row.insertCell(2);			
 			
 			var search_lyrics = "<a href=\"https://mojim.com/" + i.name + ".html?t3\" target=\"_blank\"><img src=\"img\\book.png\" width = 26px height = 26px /></a>";
-			var search_youtube = "";			
+						
 			if(i.author == "N"){
 				search_youtube = "<a href=\"https://www.youtube.com/results?search_query=" + i.name + "\" target=\"_blank\"><img src=\"img\\youtube.png\" width = 26px height = 26px /></a>";
 			}else{
