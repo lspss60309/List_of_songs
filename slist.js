@@ -7255,7 +7255,7 @@
 	'words_count': 3
 },{
 	'id': 13541,
-	'name': "笨小孩",
+	'name': "笨小孩*",
 	'author': "吳宗憲,劉德華,柯受良",
 	'words_count': 3
 },{
@@ -16825,7 +16825,7 @@
 	'words_count': 5
 },{
 	'id': 10558,
-	'name': "明天會更好",
+	'name': "明天會更好*",
 	'author': "大合唱",
 	'words_count': 5
 },{
@@ -19845,7 +19845,7 @@
 	'words_count': 6
 },{
 	'id': 57117,
-	'name': "台灣的心跳聲",
+	'name': "台灣的心跳聲*",
 	'author': "蔡依林",
 	'words_count': 6
 },{
@@ -24717,11 +24717,21 @@ function print(){
 			}
 			if(color_counter%2 == 0){
 				cell1.innerHTML = bg1 + i.id + "</div>";
-				cell2.innerHTML = bg1 + i.name + "<span class=\"rightfloat\">" + search_youtube + s_space + search_lyrics + l_space + "</span></div>";
+				if(song_keyword == "*"){
+					var del_star1 = i.name.split("*").join("");
+					cell2.innerHTML = bg1 + del_star1 + "<span class=\"rightfloat\">" + search_youtube + s_space + search_lyrics + l_space + "</span></div>";
+				}else{
+					cell2.innerHTML = bg1 + i.name + "<span class=\"rightfloat\">" + search_youtube + s_space + search_lyrics + l_space + "</span></div>";
+				}
 				cell3.innerHTML = bg1 + i.author + "</div>";
 			}else{
 				cell1.innerHTML = bg2 + i.id + "</div>";
-				cell2.innerHTML = bg2 + i.name + "<span class=\"rightfloat\">" + search_youtube + s_space + search_lyrics + l_space + "</span></div>";        
+				if(song_keyword == "*"){
+					var del_star2 = i.name.split("*").join("");
+					cell2.innerHTML = bg2 + del_star2 + "<span class=\"rightfloat\">" + search_youtube + s_space + search_lyrics + l_space + "</span></div>";
+				}else{
+					cell2.innerHTML = bg2 + i.name + "<span class=\"rightfloat\">" + search_youtube + s_space + search_lyrics + l_space + "</span></div>";
+				}        
 				cell3.innerHTML = bg2 + i.author + "</div>";
 			}color_counter++;
 			exist_counter++;
