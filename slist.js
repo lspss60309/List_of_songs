@@ -24675,7 +24675,7 @@
 	'words_count': 10
 },{
 	'id': 83082,
-	'name': "神羅天燈",
+	'name': "神羅天燈*",
 	'author': "李芸庭",
 	'words_count': 4
 }];
