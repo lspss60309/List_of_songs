@@ -24682,9 +24682,15 @@
 
 function print(){
 	var table = document.getElementById("results");
-	var song_keyword = document.getElementById("song_keyword").value;		//欄位中給的歌名關鍵字
-	var author_keyword = document.getElementById("author_keyword").value;	//欄位中給的作者關鍵字
-	var word_counter = document.getElementById("word_counter").value;		//欄位中給的歌名字數
+
+	while(table.hasChildNodes())
+	{
+   	    	table.removeChild(table.firstChild);
+	}	
+
+	var song_keyword = document.getElementById("song_keyword").value;		// 欄位中給的歌名關鍵字
+	var author_keyword = document.getElementById("author_keyword").value;	                 // 欄位中給的作者關鍵字
+	var word_counter = document.getElementById("word_counter").value;		// 欄位中給的歌名字數
 	
 	var color_counter = 0;//顏色計數
 	var exist_counter = 0;
@@ -24707,7 +24713,7 @@ function print(){
 				search_youtube = "<a href=\"https://www.youtube.com/results?search_query=" + i.name + "\" target=\"_blank\"><img src=\"img\\youtube.png\" width = 26px height = 26px /></a>";
 			}else{
 				search_youtube = "<a href=\"https://www.youtube.com/results?search_query=" + i.name + "+" + i.author + "\" target=\"_blank\"><img src=\"img\\youtube.png\" width = 26px height = 26px /></a>";
-			}//歌手為N時搜尋歌名就好,其餘搜尋歌名+歌手
+			}// 歌手為N時搜尋歌名就好,其餘搜尋歌名+歌手
 			if(i.name.length > 14){
 				l_space = "";
 				s_space = "&nbsp;&nbsp;";
@@ -24737,13 +24743,9 @@ function print(){
 			exist_counter++;
 		}
 	});
-	if(exist_counter == 0){
+	if(exist_counter === 0){
 		alert("您所搜尋的關鍵字組合" + "\n歌名: " +song_keyword + "\n歌手: " + author_keyword + "\n字部: " + word_counter + "\n找不到結果!\n請翻本子找找看~");
 	}
-}
-
-function home(){
-	window.location.replace('index.html');
 }
 
 $(document).ready(function(){
