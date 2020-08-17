@@ -83,3 +83,8 @@ button {
 .rightfloat {
 	float:right;
 }
+
+.bg_head
+{
+	background-color: #FED766;
+}

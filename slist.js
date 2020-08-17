@@ -24683,13 +24683,13 @@
 function print(){
 	var table = document.getElementById("results");
 
-	while(table.hasChildNodes())
+	for(var index = table.rows.length - 1; index > 0; index--)
 	{
-   	    	table.removeChild(table.firstChild);
+		table.deleteRow(index);
 	}	
 
 	var song_keyword = document.getElementById("song_keyword").value;		// 欄位中給的歌名關鍵字
-	var author_keyword = document.getElementById("author_keyword").value;	                 // 欄位中給的作者關鍵字
+	var author_keyword = document.getElementById("author_keyword").value;	// 欄位中給的作者關鍵字
 	var word_counter = document.getElementById("word_counter").value;		// 欄位中給的歌名字數
 	
 	var color_counter = 0;//顏色計數
